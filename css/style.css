@@ -1,0 +1,342 @@
+@media (min-width: 614px) {
+  .top,
+  .main,
+  .bottom,
+  .checkOut {
+    display: none;
+  }
+  .nyan {
+    position: absolute; 
+    background-color: #1c4170;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nyan >h1{
+    font-size: 26px;
+    margin-top: 120px;
+    color: #ffffff
+  }
+  .nyan > ol, .nyan > h3{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .nyan li{
+    margin-bottom: 8px;
+  }
+  .nyan>img{
+    margin-top: 10px;
+    width: 500px;
+    height: 450px;
+  }
+
+}
+@media (max-width: 614px) {
+  .nyan{
+    display: none;
+  }
+  body {
+    background-color: inherit;
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  .top {
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: #cf2b2b;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .top > div {
+    margin-left: 15px;
+  }
+  .top > span {
+    margin-right: 15px;
+  }
+  .top img {
+    width: 55px;
+    height: 55px;
+  }
+  .top h1 {
+    font-size: 36px;
+  }
+  .top p {
+    margin-top: 3px;
+    font-size: 13.5px;
+  }
+  .righteous,
+  .food > h1 {
+    font-family: "Righteous", cursive;
+  }
+  .main {
+    width: 100%;
+    margin: 102px 0px;
+    z-index: -1;
+    /* overflow: hidden; */
+  }
+
+  .menu,
+  .menu-main,
+  .menu-drink {
+    /* Melhor opção (grid) para utilizar junto com o overflow para não perder
+     o tamanho das divs*/
+    display: grid;
+    grid-auto-flow: column;
+    overflow: scroll;
+    margin-left: 15px;
+    gap: 16px;
+  }
+  .starter {
+    display: grid;
+    grid-auto-flow: column;
+    overflow: scroll;
+    margin-left: 15px;
+    gap: 16px;
+  }
+  .food {
+    width: 100%;
+  }
+  .last {
+    margin-right: 15px;
+  }
+  .space {
+    margin-top: 14px;
+  }
+  .check {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: #32b72f;
+  }
+
+  .dish,
+  .drink,
+  .main-dish {
+    box-sizing: border-box;
+    width: 162px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  .teste {
+    box-sizing: border-box;
+    width: 162px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 10px;
+  }
+  .chosed {
+    border: 3.5px solid #32b72f;
+  }
+  .dish > img,
+  .main-dish > img,
+  .drink > img {
+    width: 134px;
+    height: 87px;
+    margin: 12px 0px 8px 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px #e5e5e5;
+  }
+  .teste > img {
+    width: 134px;
+    height: 87px;
+    margin: 12px 0px 8px 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px #e5e5e5;
+  }
+  .pimenta {
+    width: 100%;
+    height: 12px;
+    display: flex;
+    margin-bottom: 12px;
+  }
+  .pimenta > p {
+    font-size: 13.5px;
+    font-weight: 500;
+    margin-right: 6px;
+  }
+  .food > h1 {
+    font-size: 20px;
+    padding-left: 15px;
+    margin-bottom: 14px;
+  }
+
+  .menu-info {
+    width: 134px;
+    font-size: 15px;
+  }
+
+  .price {
+    display: flex;
+    justify-content: center;
+    background-color: #cf2b2b;
+    width: 100%;
+    position: absolute;
+    height: 24px;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .price > p {
+    font-size: 14.5px;
+    color: #ffffff;
+    margin-top: 2px;
+    text-align: center;
+  }
+  .menu-container {
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .menu-container > p {
+    text-align: center;
+    font-size: 15.5px;
+    font-weight: 500;
+  }
+  .menu-container > span {
+    display: block;
+    font-size: 12.5px;
+    margin: 8.5px 0;
+    line-height: 13.5px;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 65%;
+    width: 80%;
+  }
+
+  button {
+    color: #ffffff;
+    background-color: #cbcbcb;
+    font-size: 16px;
+    border-radius: 10px;
+    line-height: 27px;
+    width: 100%;
+  }
+
+  .done {
+    width: 80%;
+    background-color: #50d074;
+  }
+  .blur {
+    filter: blur(8px);
+  }
+
+  .checkOut {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-self: center;
+    align-content: center;
+    height: 275px;
+    background-color: #50d074;
+    position: fixed;
+    top: 35%;
+    left: 10%;
+
+    z-index: 1;
+  }
+
+  .checkOut-container {
+    width: 80%;
+    margin: 16px auto;
+  }
+  .checkOut {
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 15px;
+  }
+  .checkOut .order {
+    margin: 16px 0;
+  }
+  .mainDishOrder {
+    margin: 18px 0;
+  }
+  .dishOrder,
+  .mainDishOrder,
+  .drinkOrder,
+  .checkOutPrice {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .checkOutPrice {
+    font-size: 18px;
+    margin: 22px 0;
+    font-weight: 700;
+  }
+  .checkOut h1 {
+    font-size: 19px;
+    font-weight: 700;
+  }
+  .buttonOrder {
+    background-color: #ffffff;
+    color: #50d074;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .buttonCancel {
+    background-color: #50d074;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .noScroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}

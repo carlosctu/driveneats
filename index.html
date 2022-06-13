@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/nyan.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>DrivenEats</title>
+  </head>
+  <body>
+    <div class="top righteous">
+      <div>
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+      </div>
+      <span>
+        <img src="img/logo.png" alt="logo" />
+      </span>
+    </div>
+    <div class="main">
+      <div class="food">
+        <h1>Primeiro, sua entrada</h1>
+        <div class="menu">
+          <div class="dish" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/causa_rellena.jpg" alt="causa_rellena" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Causa Rellena</p>
+                <span
+                  >Massa de batata amarela peruana, recheada com frango,
+                  salsinha maionese e aipo.</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+            </div>
+            <div class="price">
+              <p>R$</p>
+              <p class="value">12.90</p>
+            </div>
+          </div>
+          <div class="dish" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/papa_a_la_huancaina.png" alt="papa_a_la_huancaina" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Papa a la Huancaina</p>
+                <span
+                  >Rodelas de batata em creme <i>Huancaína</i> (molho feito a
+                  base de pimenta peruana).</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/pimenta-picante.png" alt="pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">10.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="dish" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/rocoto_relleno.jpg" alt="rocoto_relleno" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Rocoto Relleno</p>
+                <span
+                  >Pimenta peruana recheada com carne moida, ovo, azeitona,
+                  queijo e <i> aji panca</i>.</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/pimenta-picante.png" alt="pimenta" />
+                <img src="img/pimenta-picante.png" alt="pimenta" />
+                <img src="img/pimenta-picante.png" alt="pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">14.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="dish" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/salpicon_de_pollo.png" alt="salpicon_de_pollo" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Salpicón de Pollo</p>
+                <span
+                  >Salada de frango misturada com milho peruano, ervilha,
+                  cenoura e maionese.</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">8.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="dish" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/ocopa.jpg" alt="ocopa" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Ocopa</p>
+                <span
+                  >Rodelas de batata em creme de <i>Ocopa</i> (molho feito a
+                  base da planta apimentada <i>Huacatay</i>).</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/pimenta-picante.png" alt="pimenta-picante" />
+                <img src="img/pimenta-picante.png" alt="pimenta-picante" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">11.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="dish last" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/tequenos.png" alt="tequenos" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Tequeños Peruanos</p>
+                <span
+                  >Massa <i>wonton</i> frita e recheada com queijo. Acompanha um
+                  pote com guacamole.</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">8.90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="food space">
+        <h1>Agora, seu prato principal</h1>
+        <div class="menu-main">
+          <div class="main-dish" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/lomo_saltado.png" alt="lomo_saltado" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Lomo Saltado</p>
+                <span
+                  >Prato popular peruano que contém batata frita, arroz e carne em tiras marinadas com vegetais e especiarias.</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+            </div>
+            <div class="price">
+              <p>R$</p>
+              <p class="value">18.90</p>
+            </div>
+          </div>
+          <div class="main-dish" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/ceviche.jpg" alt="ceviche" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Ceviche Peruano</p>
+                <span
+                  >Prato feito a base de peixe cru marinao em limão, <i>aji limo</i> e outros ingredientes</i>. Acompanha <i>camote</i>.</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/pimenta-picante.png" alt="pimenta" />
+                <img src="img/pimenta-picante.png" alt="pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">25.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-dish" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/arroz_chaufa.jpg" alt="arroz_chaufa" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Arroz Chaufa</p>
+                <span
+                  >Mistura de arroz frito com legumes, carne, shoju, ovos e cebolinha cozinhados em fogo alto</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">16.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-dish" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/arroz_con_pollo.jpg" alt="arroz_con_pollo" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Arroz con Pollo</p>
+                <span
+                  >Prato do norte peruano. Feito a base de coentro e outras especiairias o que traz essa cor verde ao arroz.</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">16.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-dish last" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/aji_de_gallina.jpg" alt="aji_de_gallina" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Ají de Gallina</p>
+                <span
+                  >Arroz e frango desfiado misturado com um creme feito a base leite evaporado e pasta de <i>ají amarillo</i>.</span
+                >
+              </div>
+              <div class="pimenta">
+                <p>Picancia:</p>
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+                <img src="img/nao-pimenta.png" alt="nao-pimenta" />
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">20.90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="food space">
+        <h1>Finalmente, sua bebida</h1>
+        <div class="menu-drink">
+          <div class="drink" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/inka_cola.jpg" alt="inka_cola" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Inca Cola</p>
+                <span
+                  >O refri mais popular no Peru desde 1935. O sabor é parecido com o Tutti-fruti.</span
+                >
+              </div>
+            </div>
+            <div class="price">
+              <p>R$</p>
+              <p class="value">9.90</p>
+            </div>
+          </div>
+          <div class="drink" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/chicha_morada.jpg" alt="chicha_morada" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Chicha Morada</p>
+                <span
+                  >Bebida tradicional do Peru feita a base de milho roxo e fervido com especiarias e frutas (servido gelado).</span
+                >
+              </div>
+
+              <div class="price">
+                <p>R$</p>
+                <p class="value">7.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="drink" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/emoliente.jpg" alt="emoliente" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Emoliente</p>
+                <span
+                  >Bebida tradicional peruana feita a base de ervas. Pode ser bebida gelada ou quente</span
+                >
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">7.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="drink" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/cerveja.jpg" alt="cerveja" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Cerveja Cusqueña</p>
+                <span
+                  >Cerveja ícone do Peru, com sua cor dourada, composta por notas cítricas e doces obtidas da combinação da cevada 100% maltada.</span
+                >
+              </div>
+
+              <div class="price">
+                <p>R$</p>
+                <p class="value">12.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="drink last" onclick="chosedOption(this)">
+            <ion-icon class="check hidden" name="checkmark-circle-outline"></ion-icon>
+            <img src="img/coca_cola.jpg" alt="coca_cola" />
+            <div class="menu-info">
+              <div class="menu-container">
+                <p class="chosedDish">Coca-Cola</p>
+                <span
+                  >Coca-cola, o refri que todo mundo conhece.</span
+                >
+              </div>
+              <div class="price">
+                <p>R$</p>
+                <p class="value">5.90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="checkOut hidden">
+      <div class="checkOut-container"> 
+      <h1>Confirme seu pedido</h1>
+      <div class="order">
+        <div>
+          <!-- <h1>Entrada: </h1> -->
+          <div class="dishOrder">
+            <p class="dishName">Entrada</p>
+            <p class="dishValue">Valor</span>
+          </div>
+        </div>
+        <!-- <h1>Prato Principal:</h1> -->
+        <div class="mainDishOrder">
+          <p class="dishName">Entrada</p>
+          <p class="dishValue">Valor</span>
+        </div>
+        <!-- <h1>Bebida:</h1> -->
+        <div class="drinkOrder">
+          <p class="dishName">Entrada</p>
+          <p class="dishValue">Valor</span>
+        </div>
+        <div class="checkOutPrice">
+            <p>Total</p>
+            <p class="totalValue">Valor</span>
+        </div>
+      </div>
+      <div class="order-button">
+        <a class="link" href="">
+        <button class="buttonOrder" onclick="makeOrder()">Finalizar compra</button>
+      </a>
+        <button class="buttonCancel" onclick="cancel()">Cancelar</button>
+      </div>
+    </div>
+    <div class="block"></div>
+  </div>
+    <div class="bottom">
+      <div class="button">
+        <button class="" onclick="checkOut()" disabled>Escolha 3 itens para fechar o pedido</button>
+      </div>
+    </div>
+    <div class="nyan">
+      <div class="nyan-cat nyan-size"></div>
+      <h1>Layout apenas para Mobile!</h1>
+      <h3>Caso queira visualizar em Desktop (Windows):</h3>
+      <ol>
+        <li>1. Aperte F12 na página</li>
+        <li>2. Logo Ctrl + Shift + M</li>
+        <li>3. Aparecerá uma barra superior com Dimensions</li>
+        <li>4. Escolha o telefone da sua preferencia</li>
+      </ol>
+      <img src="img/404.jpg" alt="">
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script/index.js"></script>
+  </body>
+</html>
