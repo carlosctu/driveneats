@@ -20,7 +20,7 @@ The app is only available for mobile users, so if you don't want to see a cat sh
 
 <p>You can access this project by following the next link:</p>
 
- [Instagram Homepage by Carlos C.](https://carlosctu.github.io/instagram-homepage/)
+ [DrivenEats by Carlos C.](https://carlosctu.github.io/driveneats/)
 
 ## [Autor](https://www.linkedin.com/in/carloscasanovad/)
 Carlos Aurelio Casanova de la Torre Ugarte<br/><br/>
